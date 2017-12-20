@@ -1,0 +1,211 @@
+<html>
+    <head>
+        <title>home_explain</title>   
+
+ <meta charset="utf-8">
+    
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="author" content="">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+   
+      <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+
+</style>
+
+</head>
+<body>
+  <header>
+  <div class="container" >
+        <a href="assignment.html">  <img src="meavita.png" class="pull-left" style="filter: grayscale(10%);max-height: 200px;max-width: 150px;float: left"> </a>
+            <nav >
+            <ul>
+
+              <li class="dropdown">
+              <a href="assignment.html" class="dropbtn"> About Us </a>
+          
+              </li>
+
+              <li class="dropdown">
+              <a href="#" class="dropbtn">Update Post</a>
+              <div class="dropdown-content">
+                <a href="update_post.html">Style </a>
+                <a href="#">Beauty </a>
+                <a href="#">Celebs </a>
+      
+              </div>
+            </li>
+
+               <li class="dropdown">
+              <a href="#" class="dropbtn"> media </a>
+              <div class="dropdown-content">
+ 
+                <a href="#">Photos</a>
+                <a href="#">Videos</a>
+                      
+              </div>
+              </li>
+
+            
+          </ul>
+            </nav>
+  </div>
+  </header>
+
+ <!--carousel-->
+ <section class="para">
+   <div class="container">
+     <h1> An Activist and Sci-Fi Fan on How to Survive the End of the World</h1>
+      <hr>
+      <article>
+      <p>
+  Adrienne Maree Brown is the author of a book I recommend so often I might as well put it in my email signature: Emergent Strategy: Shaping Change, Changing Worlds. It is incredible. She is incredible. Barack Obama once told her he “saw the love goddess” in her. She and Michelle Obama may or may not have had a moment.
+
+</p>
+<p>
+Adrienne is a Detroit-based writer, activist, facilitator, poet, and avid sci-fi fan. It’s her love of science fiction that has given her such brilliant insight into how to create the world that so many of of us desperately want to live in: one full of love, equality and freedom.
+</p>
+
+<p>
+ In this episode, Adrienne and I talk about what birds can teach us about social movements, the value of personal pleasure (did I mention she writes a sex column for Bitch Media, too?), why Beyoncé is absolutely everything, and how to survive the end of the world.
+
+</p>
+
+<p>
+Hope you love listening to this episode as much as I loved making it.
+</p>
+</article>
+
+<aside class="box5">
+  <img src="fashion.png">
+</aside>
+
+   </div>
+
+ </section>
+
+ <!--products --> 
+
+
+
+<!--media-->
+
+
+
+<section class="fromr">
+<div class="container">
+<ul class="nav nav-tabs">
+ <button class="tablinks active" onclick="openCity(event, 'London')">Comments</button>
+  <button class="tablinks" onclick="openCity(event, 'Lon')">Websites.co</button>
+  </ul>
+</div>
+ <div id="London" class="tabcontent active" >
+ <span> <i class="fa fa-user" style="float: left;padding-right: 20px"></i></span>
+ <form id="fromw" style="margin-left: 10%;">
+  <textarea id ="enter" rows="4" cols="50" ng-model="user.mess" placeholder="Discussion" style="border-radius: 20px"> 
+   </textarea> <br>
+      <input id ="enter" style="background-color:#7cc576;border-radius: 5px;color: white;font-size: 19px;font-weight: 20px;border:2px solid #7cc576" type="submit" ng-click="update(user)" value="Enter">
+  </form>
+</div>
+
+<div id="Lon" class="tabcontent nonactive" s>
+  <h3>Websites</h3>
+  <p>Fashion blog</p>
+</div>
+</section>
+
+<!--media-->
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+<!--contact us-->
+
+<footer>
+  <div class="container">
+  <div class="boxes2">
+  <div class="box2">
+  <h1> Contact us</h1>
+    <ul class="social" style="padding: 0;margin: 0">
+      <li> <a  id="twit" href="#"> <i class="fa fa-twitter"> </i> </a> </li>
+      <li> <a  id="face" href="#"> <i class="fa fa-facebook"> </i> </a> </li>
+      <li> <a  id="pin" href="#"> <i class="fa fa-pinterest"> </i> </a> </li>
+      <li> <a  id="goog" href="#"> <i class="fa fa-google-plus"> </i> </a> </li>
+      <li> <a  id="enve" href="#"> <i class="fa fa-envelope"> </i> </a> </li>
+    </ul>
+  </div>
+  <div class="box2" style="float: right;margin-top: 15px;margin-right: 10%">
+    <div ng-controller="ExampleController">
+  <form novalidate class="css-form">
+   <input id="a" type="text" ng-model="user.name" placeholder="Your Name" required > <br>
+   <input id ="a" type="email" ng-model="user.email" placeholder="your email" required> <br>
+   <input  id ="a" type="integer" ng-model="user.mobile" placeholder="your mobile" required > <br>
+   <input id ="a" type="text" ng-model="user.Subject" placeholder="Subject" > <br>
+  <textarea id ="a" rows="4" cols="50" ng-model="user.mess" placeholder="your message" > 
+   </textarea> <br>
+      <input id ="a" style="background-color:#7cc576;color: white;font-size: 19px;font-weight: 20px;border:2px solid #7cc576" type="submit" ng-click="update(user)" value="Send Message">
+  </form>
+
+</div>
+
+</div>
+
+<script>
+  angular.module('formExample', [])
+    .controller('ExampleController', ['$scope', function($scope) {
+      $scope.master = {};
+
+      $scope.update = function(user) {
+        $scope.master = angular.copy(user);
+      };
+
+      $scope.reset = function() {
+        $scope.user = angular.copy($scope.master);
+      };
+
+      $scope.reset();
+    }]);
+</script>
+
+
+</div>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
